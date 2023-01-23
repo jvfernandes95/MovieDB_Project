@@ -1,0 +1,67 @@
+<app-navbar></app-navbar>
+<app-slider></app-slider>
+
+<main>
+  <div class="container">
+    <div *ngFor="let f of movie_List| slice:0:9;">
+      <div class="container d-flex flex-wrap align-items-center">
+          <div class="card m-4 card" style="width: 15rem;">
+            <img src="https://image.tmdb.org/t/p/w185/{{f.poster_path}}" onerror="this.src='https://blog.savegnago.com.br/wp-content/uploads/2021/07/tipos-de-filme01-1-1.jpg'">
+            <div class="card-body">
+              <h5 class="card-title">{{f.title}}</h5>
+              <p class="card-text">{{f.release_date}}</p>
+              <div class="link">
+                <button [routerLink]="['/movieCard/' + f.id]">Info</button>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  
+  </main>
+
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-5">
+      <img id="logo" src="assets/Blackout.png">
+      <nav aria-label="Page navigation example">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" (click)="getMoviedetails(id = 1,page= page-1)">Previous</a></li>
+            <li class="page-item"><a class="page-link" (click)="getMoviedetails(id = 10,1)">1</a></li>
+            <li class="page-item"><a class="page-link"  (click)="getMoviedetails(id = 20,2)">2</a></li>
+            <li class="page-item"><a class="page-link" (click)="getMoviedetails(id = 30,3)">3</a></li>
+            <li class="page-item"><a class="page-link" (click)="getMoviedetails(id = 40,4)">4</a></li>
+            <li class="page-item"><a class="page-link" (click)="getMoviedetails(id = 50,5)">5</a></li>
+            <li class="page-item"><a class="page-link" (click)="getMoviedetails(id = 60,page= page+1)">Next</a></li>
+          </ul>
+        </nav>
+        <!-- 
+          <div class="pagination pagination-large">
+         <ul class="pager">
+          <li class="active">
+          <a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+        </ul>
+        </div>
+         -->
+      </nav>
+
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © Diego tenha pena da minha alma  :')
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+
+
+  <router-outlet></router-outlet>

@@ -1,0 +1,34 @@
+
+.container{
+  margin: 2rem 0 1rem;
+  display: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: 0 auto;
+  
+}
+
+.image-container{
+  margin: 0 auto;
+  display: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+
+.card-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-text{
+  text-align: center;
+  font-weight: 500;
+}
+
+.card-body{
+  margin: 2rem 0 1rem;
+}

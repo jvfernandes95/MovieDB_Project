@@ -1,0 +1,21 @@
+<app-slider></app-slider>
+
+<main>
+  <div class="container">
+    <div *ngFor="let f of getListMovie| slice:0:9;">
+      <div class="container d-flex flex-wrap align-items-center">
+          <div class="card m-4 card" style="width: 15rem;">
+            <img src="https://image.tmdb.org/t/p/w185/{{f.poster_path}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{f.title}}</h5>
+              <p class="card-text">{{f.release_date}}</p>
+              <div class="link">
+                <button [routerLink]="['/movieCard/' + f.id]">Info</button>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  
+  </main>

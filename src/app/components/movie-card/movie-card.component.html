@@ -1,0 +1,24 @@
+<app-slider></app-slider>
+
+
+<div class="container">
+  <div class="card container d-flex" style="max-width: 650px;">
+    <div class="row g-0">
+    <div class="image-container col-md-4 ">
+      <img src="https://image.tmdb.org/t/p/w185/{{moviePage.poster_path}}" onerror="this.src='https://blog.savegnago.com.br/wp-content/uploads/2021/07/tipos-de-filme01-1-1.jpg'">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{moviePage.title}}</h5>
+        <p class="card-text">{{moviePage.overview}}</p>
+        <p class="card-text"><small class="text-muted">{{moviePage.release_date}} &nbsp; Populatiry:{{moviePage.popularity}}
+          &nbsp; Duração:{{moviePage.runtime}}
+        </small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

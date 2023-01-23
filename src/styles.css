@@ -1,0 +1,16 @@
+
+
+body{
+  font-family: "roboto";
+  background-color:rgb(235, 222, 222);
+}
+
+
+.row{
+  margin: 0;
+}
+
+.container{
+  color:rgb(165, 32, 32);
+  font-size: 14px;
+}

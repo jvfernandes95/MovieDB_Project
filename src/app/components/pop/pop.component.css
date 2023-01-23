@@ -1,0 +1,45 @@
+.container {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 2rem 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.card-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-text{
+  text-align: center;
+  font-weight: 500;
+}
+
+
+
+
+.container-footer {
+  height: 200px;
+  color: black;
+}
+
+.container-footer{
+  text-align: center;
+  color: black;
+}
+
+.page-item li{
+  text-align: center;
+}
+
+.link{
+  text-align: center;
+}
